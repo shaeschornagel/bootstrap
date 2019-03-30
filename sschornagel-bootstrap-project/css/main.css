@@ -1,0 +1,330 @@
+/*shared styles*/
+
+
+@media screen{
+
+body{
+	background-image: url("../images/winter-scene-web.jpg");
+	background-position: left;
+	background-attachment: fixed;
+}
+
+/*header, nav*/
+	header {
+		background-color: #000;
+		height: 150px;
+	}
+	.nav{
+		margin: 100px 0px 0px 85px;
+	}
+
+	.nav a{
+		color: #fff;
+	}
+
+/*css image replacement for header */
+	.samanta-image{
+	font-size: 20%; 
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	display: inline-block;
+}
+
+	.samanta-image, .samanta-image span{
+		width: 135px; 
+		height: 150px;
+		color: #000;
+}
+
+	.samanta-image span {
+		background: url('../images/samantha-jones.jpg') no-repeat;
+		background-size: cover; 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		padding-top: 90%;
+		margin: -16px 0px 0px 10px;
+}
+
+/*samanta jones header text*/
+
+	#samanta-jones{
+		color: #A40606;
+		font-family: 'Droid Serif', serif;
+		font-size: 3em;
+		width: 325px;
+		margin: 90px 0px 0px 200px;
+		padding: 0px 0px 0px 0px;
+	}
+
+/*MAIN*/
+	/*styling rows*/
+
+	.row{
+		background-color: #000;
+		margin-top: 30px;
+		margin-left: 10px;
+		margin-bottom: 5px;
+		border-radius: 10px;
+	}
+
+	.reviews{
+		padding: 20px 35px;
+	}
+
+	.reviews .glyphs span{
+		float: left;
+		color: yellow;
+		margin: 2px;
+	}
+
+	.reviews p{
+		color: #fff;
+	}
+
+	/*first row style*/
+
+	#whitehorn-text{
+		color: #fff;
+		margin-top: 40px;
+		margin-right: 20px;
+	}
+
+	#whitehorn-text h1{
+		font-size: 2.2em;
+	}
+
+	#whitehorn-text p{
+		margin: 10px ;
+	}
+
+	.btn{
+		background-color: #337AB7;
+		color: #fff;
+		border: none;
+		border-radius: 5px;
+	}
+	/* CSS image replacement for book cover */
+		.book-cover{
+			font-size: 20%; 
+			margin: 20px 10px 20px 20px;
+			position: relative;
+			display: inline-block;
+			float: left;
+		}
+
+		.book-cover, .book-cover span{
+			width: 301px; 
+			height: 405px;
+			color: #000;
+		}
+
+		.book-cover span {
+			background: url('../images/book.jpg') no-repeat;
+			background-size: cover; 
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+		}
+}
+
+
+/* to fix broken positioning */
+@media (max-width: 1199px){
+	.nav{
+		margin: 100px 0px 0px 0px;
+	}
+}
+
+@media (max-width: 767px){
+	 	.btn{
+ 		width: 90%;
+ 		height: 45px;
+ 		display: block;
+ 		margin: 15px auto;
+ 	}
+
+ 	a.btn{
+ 		font-size: 1.2em;
+ 		line-height: 35px;
+ 	}
+
+ 	#whitehorn-text p{
+ 		margin: 10px 20px !important;
+ 	}
+
+  	#whitehorn-text h1{
+ 		margin: 0px 20px !important;
+ 	}
+}
+/*phone*/
+@media (max-width: 575px){
+	.samanta-image{ 
+		display: none;}
+
+	#samanta-jones{
+		color: #A40606;
+		font-family: 'Droid Serif', serif;
+		font-size: 1.4em;
+		margin: 10px 0px 0px 0px;
+		width: 325px;
+	}
+
+	.nav{
+		background-color: #000;
+
+	}
+
+	header{
+		height: 50px;
+	}
+	.book-cover{
+		display: none;
+	}
+
+/*navbar*/
+
+	.navbar-toggle{
+		background-color: #000;
+	}
+	span.icon-bar{
+		background-color: #fff;
+	}
+
+	div.navbar-collapse{
+		background-color: #000;
+		padding-bottom: 10px;
+	}
+	ul.nav{
+		padding: 0;
+		background-color: #000;
+		margin-top: 0px;
+
+	}
+
+	.nav a{
+		background-color: #fff;
+		color: #000;
+		border: 2px solid black;
+		font-size: 1.4em;
+	}
+
+	.nav a:hover{
+		background-color: #444 !important;
+		color: #FFF;
+	}
+
+
+
+}
+/* phone to tablet */
+@media (min-width: 576px) and (max-width: 767px) { 
+	.samanta-image span, .samanta-image{
+		display: none;
+	}
+
+	#samanta-jones{
+		color: #A40606;
+		font-family: 'Droid Serif', serif;
+		font-size: 2em;
+		margin: 25px -50px 0px 0px;
+		width: 300px;
+	}
+	.nav{
+		margin: 0px 0px 0px 0px;
+	}
+/*nav bar collapse*/
+	header{
+		height: 75px;
+	}
+	.navbar-toggle{
+		background-color: #000;
+	}
+	span.icon-bar{
+		background-color: #fff;
+	}
+	ul.nav{
+		
+		padding-bottom: 80px;
+		background-color: #000;
+		width: 100%;
+	}
+
+/*nav style*/
+
+	ul.nav{
+		padding: 10px;
+		background-color: #000;
+		width: 100%;
+	}
+
+	.nav a{
+		background-color: #fff;
+		color: #000;
+		border: 2px solid black;
+		font-size: 1.4em;
+
+	}
+
+	.nav a:hover{
+		background-color: #444 !important;
+		color: #FFF;
+
+	}
+
+		div.navbar-collapse{
+		background-color: #000;
+	}
+
+
+	.book-cover{
+		display: none;
+	}
+ }
+
+ 	#whitehorn-text p, #whitehorn-text h1{
+ 		margin:5px 0px 15px 0px;
+ 	}
+
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 991px) {
+	.samanta-image span, .samanta-image{
+		display: none;
+	}
+
+	#samanta-jones{
+		color: #A40606;
+		font-family: 'Droid Serif', serif;
+		font-size: 2em;
+		margin: 25px 0px 0px 0px;
+		width: 325px;
+	}
+
+	.nav{
+		margin: 25px 0px 0px 0px;
+		height: 75px;
+	}
+
+	header{
+		height: 75px;
+	}
+
+	.btn{
+		float: left;
+		margin: 0px 0px 20px 20px;
+	}
+	.book-cover{
+		margin-top: 45px;
+	}
+}
+/*remove background image*/
+@media (max-width: 1200px){
+		body{
+		background-image: none;
+	}
+	.row{
+		margin: 25px 40px 0px 0px;
+	}
+}
+
